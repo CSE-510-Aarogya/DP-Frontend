@@ -128,8 +128,10 @@ class UploadTranscript extends Component {
                             <button onClick={(e) => {this.handleSubmission(e)}}  type="submit" class="btn btn-main-2 btn-icon btn-round-full">Generate Insights<i class="icofont-simple-right ml-2  "></i></button>
                         </div>
                         </form>   
-                        <br /> <br /><br /><a href="https://drive.google.com/file/d/1Ker-r9BPY0pIagXmRBWkdSwExdXVBsD8/view?usp=sharing" target="_blank" download="300_TRANSCRIPT.csv">
-            <h6 style={{color: "#6F8BA4"}}>Download Sample Transcript File</h6>
+                        <br /> <br /><br /><a  class="link-primary" href="https://drive.google.com/file/d/1Ker-r9BPY0pIagXmRBWkdSwExdXVBsD8/view?usp=sharing" target="_blank" download="300_TRANSCRIPT.csv">
+                        <div class="feature-icon mb-4">
+                        <span><i class="icofont-law-document"></i></span>
+                    <span style={{color: "blue"}}>  Download Sample Transcript File</span></div>
             </a>                  
                     </div>
                 </div>

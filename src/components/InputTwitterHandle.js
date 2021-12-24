@@ -17,12 +17,12 @@ class InputTwitterHandle extends Component {
       submitHandler(event) {
         event.preventDefault();
         const twitterHandle = this.twitterHandle.current.value;
-        alertify.alert('','Generating Analysis. Please wait');
+        
         if (twitterHandle.trim().length === 0) {
           alertify.alert('','Invalid username');
             return;
           }
-          //this.props.history.push("/twitterAnalysis")
+          alertify.success('Generating Analysis. Please wait');
           let token = sessionStorage.getItem("access_token");
           axios.get('http://18.216.173.124:8081/tweet/query_to_tweeter_model/'+twitterHandle,
           { 'headers': { 'Authorization': `Bearer ${token}` } })

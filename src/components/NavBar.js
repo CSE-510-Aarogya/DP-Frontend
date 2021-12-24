@@ -45,7 +45,7 @@ class NavBar extends Component {
 
     render(){
         const tabs = [{
-            route: "/Home",
+            route: "/",
             icon: faHome,
             label: "Home"
           },{
